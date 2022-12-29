@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50FC1168295D962300484268 /* SecureNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC1167295D962300484268 /* SecureNotesApp.swift */; };
+		50FC116A295D962300484268 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC1169295D962300484268 /* ContentView.swift */; };
+		50FC116C295D962500484268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FC116B295D962500484268 /* Assets.xcassets */; };
+		50FC116F295D962500484268 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FC116E295D962500484268 /* Preview Assets.xcassets */; };
+		50FC117A295D962500484268 /* SecureNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC1179295D962500484268 /* SecureNotesTests.swift */; };
+		50FC1184295D962500484268 /* SecureNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC1183295D962500484268 /* SecureNotesUITests.swift */; };
+		50FC1186295D962500484268 /* SecureNotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FC1185295D962500484268 /* SecureNotesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50FC1176295D962500484268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50FC115C295D962300484268 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50FC1163295D962300484268;
+			remoteInfo = SecureNotes;
+		};
+		50FC1180295D962500484268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50FC115C295D962300484268 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50FC1163295D962300484268;
+			remoteInfo = SecureNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50FC1164295D962300484268 /* SecureNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FC1167295D962300484268 /* SecureNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNotesApp.swift; sourceTree = "<group>"; };
+		50FC1169295D962300484268 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50FC116B295D962500484268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50FC116E295D962500484268 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50FC1170295D962500484268 /* SecureNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecureNotes.entitlements; sourceTree = "<group>"; };
+		50FC1175295D962500484268 /* SecureNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FC1179295D962500484268 /* SecureNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNotesTests.swift; sourceTree = "<group>"; };
+		50FC117F295D962500484268 /* SecureNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FC1183295D962500484268 /* SecureNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNotesUITests.swift; sourceTree = "<group>"; };
+		50FC1185295D962500484268 /* SecureNotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureNotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50FC1161295D962300484268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FC1172295D962500484268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FC117C295D962500484268 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50FC115B295D962300484268 = {
+			isa = PBXGroup;
+			children = (
+				50FC1166295D962300484268 /* SecureNotes */,
+				50FC1178295D962500484268 /* SecureNotesTests */,
+				50FC1182295D962500484268 /* SecureNotesUITests */,
+				50FC1165295D962300484268 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50FC1165295D962300484268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50FC1164295D962300484268 /* SecureNotes.app */,
+				50FC1175295D962500484268 /* SecureNotesTests.xctest */,
+				50FC117F295D962500484268 /* SecureNotesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50FC1166295D962300484268 /* SecureNotes */ = {
+			isa = PBXGroup;
+			children = (
+				50FC1167295D962300484268 /* SecureNotesApp.swift */,
+				50FC1169295D962300484268 /* ContentView.swift */,
+				50FC116B295D962500484268 /* Assets.xcassets */,
+				50FC1170295D962500484268 /* SecureNotes.entitlements */,
+				50FC116D295D962500484268 /* Preview Content */,
+			);
+			path = SecureNotes;
+			sourceTree = "<group>";
+		};
+		50FC116D295D962500484268 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50FC116E295D962500484268 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50FC1178295D962500484268 /* SecureNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				50FC1179295D962500484268 /* SecureNotesTests.swift */,
+			);
+			path = SecureNotesTests;
+			sourceTree = "<group>";
+		};
+		50FC1182295D962500484268 /* SecureNotesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50FC1183295D962500484268 /* SecureNotesUITests.swift */,
+				50FC1185295D962500484268 /* SecureNotesUITestsLaunchTests.swift */,
+			);
+			path = SecureNotesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50FC1163295D962300484268 /* SecureNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FC1189295D962500484268 /* Build configuration list for PBXNativeTarget "SecureNotes" */;
+			buildPhases = (
+				50FC1160295D962300484268 /* Sources */,
+				50FC1161295D962300484268 /* Frameworks */,
+				50FC1162295D962300484268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecureNotes;
+			productName = SecureNotes;
+			productReference = 50FC1164295D962300484268 /* SecureNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50FC1174295D962500484268 /* SecureNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FC118C295D962500484268 /* Build configuration list for PBXNativeTarget "SecureNotesTests" */;
+			buildPhases = (
+				50FC1171295D962500484268 /* Sources */,
+				50FC1172295D962500484268 /* Frameworks */,
+				50FC1173295D962500484268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50FC1177295D962500484268 /* PBXTargetDependency */,
+			);
+			name = SecureNotesTests;
+			productName = SecureNotesTests;
+			productReference = 50FC1175295D962500484268 /* SecureNotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50FC117E295D962500484268 /* SecureNotesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FC118F295D962500484268 /* Build configuration list for PBXNativeTarget "SecureNotesUITests" */;
+			buildPhases = (
+				50FC117B295D962500484268 /* Sources */,
+				50FC117C295D962500484268 /* Frameworks */,
+				50FC117D295D962500484268 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50FC1181295D962500484268 /* PBXTargetDependency */,
+			);
+			name = SecureNotesUITests;
+			productName = SecureNotesUITests;
+			productReference = 50FC117F295D962500484268 /* SecureNotesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50FC115C295D962300484268 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					50FC1163295D962300484268 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					50FC1174295D962500484268 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 50FC1163295D962300484268;
+					};
+					50FC117E295D962500484268 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 50FC1163295D962300484268;
+					};
+				};
+			};
+			buildConfigurationList = 50FC115F295D962300484268 /* Build configuration list for PBXProject "SecureNotes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50FC115B295D962300484268;
+			productRefGroup = 50FC1165295D962300484268 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50FC1163295D962300484268 /* SecureNotes */,
+				50FC1174295D962500484268 /* SecureNotesTests */,
+				50FC117E295D962500484268 /* SecureNotesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50FC1162295D962300484268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FC116F295D962500484268 /* Preview Assets.xcassets in Resources */,
+				50FC116C295D962500484268 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FC1173295D962500484268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FC117D295D962500484268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50FC1160295D962300484268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FC116A295D962300484268 /* ContentView.swift in Sources */,
+				50FC1168295D962300484268 /* SecureNotesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FC1171295D962500484268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FC117A295D962500484268 /* SecureNotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FC117B295D962500484268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FC1184295D962500484268 /* SecureNotesUITests.swift in Sources */,
+				50FC1186295D962500484268 /* SecureNotesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50FC1177295D962500484268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50FC1163295D962300484268 /* SecureNotes */;
+			targetProxy = 50FC1176295D962500484268 /* PBXContainerItemProxy */;
+		};
+		50FC1181295D962500484268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50FC1163295D962300484268 /* SecureNotes */;
+			targetProxy = 50FC1180295D962500484268 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50FC1187295D962500484268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50FC1188295D962500484268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		50FC118A295D962500484268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SecureNotes/SecureNotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecureNotes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.SecureNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		50FC118B295D962500484268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SecureNotes/SecureNotes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SecureNotes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.SecureNotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		50FC118D295D962500484268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.SecureNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureNotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecureNotes";
+			};
+			name = Debug;
+		};
+		50FC118E295D962500484268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.SecureNotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureNotes.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecureNotes";
+			};
+			name = Release;
+		};
+		50FC1190295D962500484268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.SecureNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SecureNotes;
+			};
+			name = Debug;
+		};
+		50FC1191295D962500484268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert.SecureNotesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SecureNotes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50FC115F295D962300484268 /* Build configuration list for PBXProject "SecureNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FC1187295D962500484268 /* Debug */,
+				50FC1188295D962500484268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FC1189295D962500484268 /* Build configuration list for PBXNativeTarget "SecureNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FC118A295D962500484268 /* Debug */,
+				50FC118B295D962500484268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FC118C295D962500484268 /* Build configuration list for PBXNativeTarget "SecureNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FC118D295D962500484268 /* Debug */,
+				50FC118E295D962500484268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FC118F295D962500484268 /* Build configuration list for PBXNativeTarget "SecureNotesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FC1190295D962500484268 /* Debug */,
+				50FC1191295D962500484268 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50FC115C295D962300484268 /* Project object */;
+}
