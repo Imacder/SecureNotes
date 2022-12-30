@@ -9,12 +9,12 @@ import SwiftUI
 
 
 struct SecureFilesView: View {
-    @AppStorage("securefiles") var securefiles: [String] = []
     @AppStorage("firstStartUp") var firstStartUp: Bool = true
+    @AppStorage("securefiles") var securefiles: [String] = []
     @AppStorage("securefilesdata") var securefilesdata: [String: String] = [:]
-    @Binding var fileselection: String
+    @Binding var fileselection: String?
     
-    init(fileselection: Binding<String>){
+    init(fileselection: Binding<String?>){
         _fileselection = fileselection
         if firstStartUp{
             firstStartUp = false
@@ -24,26 +24,58 @@ struct SecureFilesView: View {
     }
     
     var body: some View {
-        List($securefiles, id: \.hash){ filename in
-            
+        ScrollView {
+            List(securefiles, id: \.secure_id, selection: $fileselection){ filename in
+                Text(filename)
+            }
+        }
+    }
+}
+
+
+struct NormalFilesView: View {
+    @AppStorage("firstStartUp") var firstStartUp: Bool = true
+    @AppStorage("normalfiles") var normalfiles: [String] = []
+    @AppStorage("securefilesdata") var normalfilesdata: [String: String] = [:]
+    @Binding var fileselection: String?
+    
+    init(fileselection: Binding<String?>){
+        _fileselection = fileselection
+        if firstStartUp{
+            firstStartUp = false
+            normalfiles = []
+            normalfilesdata = [:]
+        }
+    }
+    
+    var body: some View {
+        ScrollView {
+            List(normalfiles, id: \.normal_id, selection: $fileselection){ filename in
+                Text(filename)
+            }
         }
     }
 }
 
 
 struct FileContentView: View {
-    @Binding var fileselection: String
+    @Binding var fileselection: String?
+    @AppStorage("securefiles") var securefiles: [String] = []
+    @AppStorage("securefilesdata") var securefilesdata: [String: String] = [:]
     var body: some View {
-        Text("hello")
+        Text(fileselection ?? "")
     }
 }
 
 
 struct ContentView: View {
     @AppStorage("securefiles") var securefiles: [String] = []
-    @AppStorage("firstStartUp") var firstStartUp: Bool = true
     @AppStorage("securefilesdata") var securefilesdata: [String: String] = [:]
-    @State var fileselection = "s0"
+    @State var fileselection: String?
+    
+    init(){
+        fileselection = ""
+    }
     
     var body: some View {
         NavigationSplitView {
@@ -58,7 +90,17 @@ struct ContentView: View {
                 SecureFilesView(fileselection: $fileselection)
             } header: {
                 HStack{
-                    Label("Secure Files", systemImage: "shield.righthalf.filled")
+                    Label("Secure Notes", systemImage: "shield.righthalf.filled")
+                        .padding(.leading)
+                        .foregroundColor(.secondary)
+                    Spacer()
+                }
+            }
+            Section {
+                NormalFilesView(fileselection: $fileselection)
+            } header: {
+                HStack{
+                    Label("Normal Notes", systemImage: "note.text")
                         .padding(.leading)
                         .foregroundColor(.secondary)
                     Spacer()

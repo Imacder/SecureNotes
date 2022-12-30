@@ -8,6 +8,17 @@
 import SwiftUI
 
 
+extension String {
+    public var secure_id: String {
+        return "secure_\(self)"
+    }
+    
+    public var normal_id: String {
+        return "normal_\(self)"
+    }
+}
+
+
 extension Array: RawRepresentable where Element: Codable {
     public init?(rawValue: String) {
         guard let data = rawValue.data(using: .utf8),
