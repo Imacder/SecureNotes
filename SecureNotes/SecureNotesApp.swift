@@ -13,5 +13,8 @@ struct SecureNotesApp: App {
         WindowGroup {
             ContentView()
         }
+        #if os(macOS)
+        .windowResizability(.contentSize)
+        #endif
     }
 }
